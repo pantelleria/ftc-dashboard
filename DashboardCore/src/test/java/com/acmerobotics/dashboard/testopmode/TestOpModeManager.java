@@ -21,6 +21,11 @@ public class TestOpModeManager {
         return activeOpMode;
     }
 
+    //jimmy
+    //run initOpMode("DDDE");
+    //jimmy
+
+
     public void initOpMode(String opModeName) {
         if (activeOpMode != null) {
             activeOpMode.internalStop();
@@ -76,4 +81,14 @@ public class TestOpModeManager {
     public void clearSendFun() {
         this.sendFun = null;
     }
+
+
+    //jimmy
+    public static void main(String[]args) {
+        TestOpModeManager obj = new TestOpModeManager();
+        obj.initOpMode("ADDDE");
+    }
+    //jimmy
+
+
 }
