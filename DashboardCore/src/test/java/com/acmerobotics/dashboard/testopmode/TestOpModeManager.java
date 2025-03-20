@@ -83,12 +83,7 @@ public class TestOpModeManager {
     }
 
 
-    //jimmy
-    public static void main(String[]args) {
-        TestOpModeManager obj = new TestOpModeManager();
-        obj.initOpMode("ADDDD");
-    }
-    //jimmy
+
 
 
 }
