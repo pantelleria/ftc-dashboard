@@ -120,7 +120,7 @@ class OpModeView extends Component<OpModeViewProps, OpModeViewState> {
       <ActionButton
         className={`
           border-blue-300 bg-blue-200 transition-colors
-          dark:border-transparent dark:bg-green dark:text-blue-50 dark:highlight-white/30
+          dark:border-transparent dark:bg-green-500 dark:text-blue-50 dark:highlight-white/30
           dark:hover:border-blue-400/80 dark:focus:bg-blue-700
         `}
         onClick={() => this.props.initOpMode(this.state.selectedOpMode)}
