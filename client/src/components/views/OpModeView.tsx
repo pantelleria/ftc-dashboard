@@ -18,6 +18,15 @@ import { ReactComponent as GamepadNotSupportedIcon } from '@/assets/icons/gamepa
 import { STOP_OP_MODE_TAG } from '@/store/types/opmode';
 import ToolTip from '@/components/ToolTip';
 
+//jimmy
+//import javax.swing.*;
+//import java.awt.event.ActionEvent;
+//import java.awt.event.ActionListener;
+
+//jimmy
+
+
+
 type OpModeViewState = {
   selectedOpMode: string;
   shouldShowGamepadUnsupportedTooltip: boolean;
@@ -119,20 +128,38 @@ class OpModeView extends Component<OpModeViewProps, OpModeViewState> {
     return (
       <ActionButton
         className={`
-          border-blue-300 bg-blue-200 transition-colors
-          dark:border-transparent dark:bg-green-500 dark:text-blue-50 dark:highlight-white/30
-          dark:hover:border-blue-400/80 dark:focus:bg-blue-700
+          border-green-300 bg-green-200 transition-colors
+          dark:border-transparent dark:bg-green-500 dark:text-green-50 dark:highlight-white/30
+          dark:hover:border-green-400/80 dark:focus:bg-green-700
         `}
         onClick={() => this.props.initOpMode(this.state.selectedOpMode)}
         //jimmy
-        //onChange={() =>
-        //    this.props.initOpMode(this.state.selectedOpMode)
+        onChange ={() => this.props.initOpMode(this.state.selectedOpMode)}
         //jimmy
+
+
+
+
+
+
       >
         Init
       </ActionButton>
     );
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   renderStartButton() {
     return (

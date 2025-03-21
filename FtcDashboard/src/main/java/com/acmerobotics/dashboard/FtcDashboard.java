@@ -959,9 +959,9 @@ public class FtcDashboard implements OpModeManagerImpl.Notifications {
                             core.enabled ? "enabled" : "disabled",
                             core.enabled ? "disable" : "enable"));
                     telemetry.update();
-
-                    waitForStart();
-
+//jimmy
+                //    waitForStart();
+//jimmy take out wait
                     if (isStopRequested()) {
                         return;
                     }
