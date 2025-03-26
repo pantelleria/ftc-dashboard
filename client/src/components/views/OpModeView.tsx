@@ -22,7 +22,7 @@ import ToolTip from '@/components/ToolTip';
 //import javax.swing.*;
 //import java.awt.event.ActionEvent;
 //import java.awt.event.ActionListener;
-
+//import React, {isShowing} from 'react';
 //jimmy
 
 
@@ -125,16 +125,19 @@ class OpModeView extends Component<OpModeViewProps, OpModeViewState> {
   }
 
   renderInitButton() {
+           this.props.initOpMode(this.state.selectedOpMode);
     return (
+
       <ActionButton
         className={`
           border-green-300 bg-green-200 transition-colors
           dark:border-transparent dark:bg-green-500 dark:text-green-50 dark:highlight-white/30
           dark:hover:border-green-400/80 dark:focus:bg-green-700
         `}
+
         onClick={() => this.props.initOpMode(this.state.selectedOpMode)}
         //jimmy
-        onChange ={() => this.props.initOpMode(this.state.selectedOpMode)}
+       // onChange ={() => this.props.initOpMode(this.state.selectedOpMode)}
         //jimmy
 
 
